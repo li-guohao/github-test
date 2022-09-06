@@ -10,9 +10,9 @@ body:
     Please make sure to search in the [issues](https://github.com/li-guohao/ikaros/issues?q=is%3Aissue) first to see
     whether the same issue was reported already.
     options:
-    - label: >
-  I had searched in the [issues](https://github.com/li-guohao/ikaros/issues?q=is%3Aissue) and found no similar
-  issues.
+  - label: >
+    I had searched in the [issues](https://github.com/li-guohao/ikaros/issues?q=is%3Aissue) and found no similar
+    issues.
   required: true
 
 - type: dropdown
@@ -21,7 +21,7 @@ body:
   description: |
     What ikaros component are you using? 
     multiple: false
-    options:
+  options:
     - "backend server (li-guohao/ikaros)"
     - "admin ui (li-guohao/ikaros-admin)"
   validations:
