@@ -3,6 +3,11 @@ title: "[Bug] "
 description: Problems and issues with code of Ikaros
 labels: [ "bug" ]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for finding the time to report the problem! We really appreciate the community efforts to improve Ikaros.
+
   - type: checkboxes
     attributes:
       label: Search before asking
@@ -19,13 +24,14 @@ body:
     attributes:
       label: Ikaros Component
       description: |
-        What ikaros component are you using? 
+        What Ikaros component are you using? Ikaros has many subprojects, please make sure
+        to choose the component that you found the bug. 
       multiple: false
       options:
-          - "backend server (li-guohao/ikaros)"
-          - "admin ui (li-guohao/ikaros-admin)"
-      validations:
-        required: true
+        - "Backend Server (li-guohao/ikaros)"
+        - "Admin UI (li-guohao/ikaros-admin)"
+    validations:
+      required: true
 
   - type: textarea
     attributes:
@@ -33,7 +39,7 @@ body:
       description: Describe what happened.
       placeholder: >
         Please provide the context in which the problem occurred and explain what happened
-        validations:
+    validations:
       required: true
 
   - type: textarea
@@ -45,8 +51,8 @@ body:
         the fragment of logs showing the exact error messages or wrong behaviour and screenshots for
         UI problems. You can include files by dragging and dropping them here.
 
-            **NOTE**: please copy and paste texts instead of taking screenshots of them for easy future search.
-      validations:
+        **NOTE**: please copy and paste texts instead of taking screenshots of them for easy future search.
+    validations:
       required: true
 
   - type: textarea
@@ -54,13 +60,13 @@ body:
       label: How to reproduce
       description: >
         What should we do to reproduce the problem? If you are not able to provide a reproducible case,
-        please open a [Discussion](https://github.com/apache/skywalking/discussions) instead.
-        placeholder: >
+        please open a [Discussion](https://github.com/li-guohao/ikaros/discussions) instead.
+      placeholder: >
         Please make sure you provide a reproducible step-by-step case of how to reproduce the problem
         as minimally and precisely as possible. Keep in mind we do not have access to your deployment.
         Remember that non-reproducible issues will be closed! Opening a discussion is recommended as a
         first step.
-      validations:
+    validations:
       required: true
 
   - type: textarea
@@ -79,12 +85,10 @@ body:
       description: >
         This is absolutely not required, but we are happy to guide you in the contribution process
         especially if you already have a good understanding of how to implement the fix.
-        SkyWalking is a totally community-driven project and we love to bring new contributors in.
-        Find us in #skywalking on Slack!
       options:
-       - label: Yes I am willing to submit a PR!
+        - label: Yes I am willing to submit a PR!
 
 
   - type: markdown
     attributes:
-    value: "Thanks for completing our form!"
+      value: "Thanks for completing our form!"
