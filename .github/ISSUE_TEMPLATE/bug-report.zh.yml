@@ -8,6 +8,8 @@ body:
       value: |
         感谢您愿意抽空报告这个问题！我们非常感谢您为改善 ikaros 做出的贡献。
 
+        有红色的 * 号，代表这项必填。
+
   - type: checkboxes
     attributes:
       label: Search before asking
