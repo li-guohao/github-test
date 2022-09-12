@@ -79,7 +79,7 @@ body:
     attributes:
       label: Are you willing to submit PR?
       description: >
-        这个不是必须的，但是如果您知道这个问题如何修复，并且原因提交RP给这个项目做贡献，我们将非常欢迎。
+        这个不是必须的，但是如果您知道这个问题如何修复，并且愿意提交RP给这个项目做贡献，我们将非常欢迎。
       options:
         - label: 是的我想要提交个PR!
           required: false
@@ -87,4 +87,4 @@ body:
 
   - type: markdown
     attributes:
-      value: "感谢您填写这个表单！因为有您，项目才能越来越好。"
+      value: "感谢您填写这个表单！因为有您的贡献，项目才能越来越好。"
