@@ -42,7 +42,7 @@ body:
   - type: textarea
     attributes:
       label: What you expected to happen
-      description: 你预期是什么样的行为(或动作)
+      description: 你预期是什么样的行为(或动作)，长日志格式  <details><summary>x.log</summary> 很长的日志内容</details>
       placeholder: >
         请解释下你为什么认为这个行为(或动作)是不符合预期的。并请您复制粘贴下 具体的错误日志或者UI截图
         
