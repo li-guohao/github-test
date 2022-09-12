@@ -10,8 +10,7 @@ body:
 
   - type: checkboxes
     attributes:
-      label: > 
-        询问前的查询确认
+      label: Search before asking
       description: >
         请去我们的 [issues](https://github.com/li-guohao/ikaros/issues?q=is%3Aissue) 列表里查询下，是否已经有类似的问题存在。
       options:
@@ -21,8 +20,7 @@ body:
 
   - type: dropdown
     attributes:
-      label: > 
-        Ikaros 组件
+      label: Ikaros Component
       description: |
         请问是 Ikaros 哪个组件的问题 Ikaros 有很多子项目，请确认你选择的组件是对应这个BUG的组件。
       multiple: false
@@ -34,8 +32,7 @@ body:
 
   - type: textarea
     attributes:
-      label: > 
-        发生了什么
+      label: What happened
       description: 描述下发生了什么
       placeholder: >
         请描述下发生了什么
@@ -44,8 +41,7 @@ body:
 
   - type: textarea
     attributes:
-      label: > 
-        预期是什么
+      label: What you expected to happen
       description: 你预期是什么样的行为(或动作)
       placeholder: >
         请解释下你为什么认为这个行为(或动作)是不符合预期的。并请您复制粘贴下 具体的错误日志或者UI截图，您也可以通过拖放对应的文件到下方上传文件。
@@ -56,8 +52,7 @@ body:
 
   - type: textarea
     attributes:
-      label: > 
-        如何去复现
+      label: How to reproduce
       description: >
         这个问题如何去复现，如果您没法提供相对准确的复现步骤，请开个 [Discussion](https://github.com/li-guohao/ikaros/discussions)
       placeholder: >
@@ -68,8 +63,7 @@ body:
 
   - type: textarea
     attributes:
-      label: > 
-        其它的补充
+      label: Anything else
       description: 其它的我们需要知道的补充内容
       placeholder: >
         比如这个问题发生的频率? (一次? 多次? 经常发生)。
@@ -77,8 +71,7 @@ body:
 
   - type: checkboxes
     attributes:
-      label: > 
-        你是否有意愿提交个PR(Pull Request)
+      label: Are you willing to submit PR?
       description: >
         这个不是必须的，但是如果您知道这个问题如何修复，并且原因提交RP给这个项目做贡献，我们将非常欢迎。
       options:
