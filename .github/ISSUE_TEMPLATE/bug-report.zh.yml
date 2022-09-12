@@ -10,7 +10,7 @@ body:
 
   - type: checkboxes
     attributes:
-      label: 询问前的查询确认
+      label: Search before asking
       description: >
         请去我们的 [issues](https://github.com/li-guohao/ikaros/issues?q=is%3Aissue) 列表里查询下，是否已经有类似的问题存在。
       options:
@@ -25,8 +25,8 @@ body:
         请问是 Ikaros 哪个组件的问题？ Ikaros 有很多子项目，请确认你选择的组件是对应这个BUG的组件。
       multiple: false
       options:
-        - "ikaros (li-guohao/ikaros)"
-        - "ikaros-admin (li-guohao/ikaros-admin)"
+        - "后端组件 (li-guohao/ikaros)"
+        - "前端后台组件 (li-guohao/ikaros-admin)"
     validations:
       required: true
 
