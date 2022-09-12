@@ -25,8 +25,8 @@ body:
         请问是 Ikaros 哪个组件的问题？ Ikaros 有很多子项目，请确认你选择的组件是对应这个BUG的组件。
       multiple: false
       options:
-        - "后端组件 (li-guohao/ikaros)"
-        - "前端后台组件 (li-guohao/ikaros-admin)"
+        - "ikaros (li-guohao/ikaros)"
+        - "ikaros-admin (li-guohao/ikaros-admin)"
     validations:
       required: true
 
