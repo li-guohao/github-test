@@ -1,0 +1,85 @@
+name: Ikaros Bug 报告
+title: "[Bug] "
+description: 给 Ikaros 项目报告一个BUG
+labels: [ "bug" ]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢您愿意抽空报告这个问题！我们非常感谢您为改善 ikaros 做出的贡献。
+
+  - type: checkboxes
+    attributes:
+      label: 询问前的查询确认
+      description: >
+        请去我们的 [issues](https://github.com/li-guohao/ikaros/issues?q=is%3Aissue) 列表里查询下，是否已经有类似的问题存在。
+      options:
+        - label: >
+            我已经在 [issues](https://github.com/li-guohao/ikaros/issues?q=is%3Aissue) 列表 里查询过，并且没找到类似的问题。
+          required: true
+
+  - type: dropdown
+    attributes:
+      label: Ikaros 组件
+      description: |
+        What Ikaros component are you using? Ikaros has many subprojects, please make sure
+        to choose the component that you found the bug.
+      multiple: false
+      options:
+        - "后端组件 (li-guohao/ikaros)"
+        - "前端后台组件 (li-guohao/ikaros-admin)"
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 发生了什么？
+      description: 描述下发生了什么
+      placeholder: >
+        请描述下发生了什么
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 预期是什么？
+      description: 你预期是什么样的行为(或动作)？
+      placeholder: >
+        请解释下你为什么认为这个行为(或动作)是不符合预期的。并请您复制粘贴下 具体的错误日志或者UI截图，您也可以通过拖放对应的文件到下方上传文件。
+        如果日志内容太长，可以用这个格式包裹起来：<details><summary>x.log</summary> 很长的日志内容</details>
+        **注意**：请复制粘贴文本，不要上传一个日志截图，截图尽量不要用(除了UI问题外)，文本日志方便搜索定位问题
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 如何去复现？
+      description: >
+        这个问题如何去复现，如果您没法提供相对准确的复现步骤，请开个 [Discussion](https://github.com/li-guohao/ikaros/discussions)
+      placeholder: >
+        请确保您提供了能一步一步成功复现的 尽可能详细的 **复现步骤**，不可复现的 issue 将会被关闭，
+        请在 [Discussion](https://github.com/li-guohao/ikaros/discussions) 发起一个讨论
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 其它的补充
+      description: 其它的我们需要知道的补充内容
+      placeholder: >
+        比如这个问题发生的频率？(一次？多次？经常发生？)。
+        如果日志内容太长，可以用这个格式包裹起来：<details><summary>x.log</summary> 很长的日志内容</details>
+
+  - type: checkboxes
+    attributes:
+      label: 你是否有意愿提交个PR(Pull Request)？
+      description: >
+        这个不是必须的，但是如果您知道这个问题如何修复，并且原因提交RP给这个项目做贡献，我们将非常欢迎。
+      options:
+        - label: 是的我想要提交个PR!
+          required: false
+
+
+  - type: markdown
+    attributes:
+      value: "感谢您填写这个表单！因为有您，项目才能越来越好。"
