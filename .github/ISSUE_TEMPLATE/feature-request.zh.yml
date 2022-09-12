@@ -11,6 +11,8 @@ body:
         
         我们非常感谢您为提高 Ikaros 做的贡献。
 
+        有红色的 * 号，代表这项必填，没有则可不填。
+
   - type: checkboxes
     attributes:
       label: Search before asking
