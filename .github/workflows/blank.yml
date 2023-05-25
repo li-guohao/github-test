@@ -8,8 +8,8 @@ on:
   push:
     branches: [ "master" ]
     paths:
-      - 'server/**'
-      - '!console/**'
+      - "server/**"
+      - "!console/**"
   pull_request:
     branches: [ "master" ]
 
