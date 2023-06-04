@@ -8,7 +8,7 @@ on:
   push:
     branches: [ "master" ]
     paths:
-      - "server/**"
+      - 'server/**'
       - "README.MD"
       - "!console/**"
   pull_request:
