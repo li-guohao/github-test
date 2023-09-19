@@ -9,8 +9,9 @@ body:
         Thank you for finding the time to report the problem! We really appreciate the community efforts to improve Ikaros.
 
   - type: checkboxes
+    id: searchBeforeAsking
     attributes:
-      label: Search before asking
+      label: 提问前查询
       description: >
         Please make sure to search in the [issues](https://github.com/li-guohao/ikaros/issues?q=is%3Aissue) first to see
         whether the same issue was reported already.
