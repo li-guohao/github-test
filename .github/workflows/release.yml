@@ -17,9 +17,12 @@ jobs:
         with:
           # (Optional)
           changelog: CHANGELOG.MD
+          # (Optional) Create a draft release.
+          # [default value: false]
+          draft: true
           # (Optional) Format of title.
           # [default value: $tag]
           # [possible values: variables $tag, $version, and any string]
-          title: $version
+          title: v$version
           # (Required) GitHub token for creating GitHub Releases.
           token: ${{ secrets.LI_GUOHAO_TOKEN }}
