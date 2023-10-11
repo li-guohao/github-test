@@ -9,17 +9,13 @@ permissions:
 on:
   # Triggers the workflow on push or pull request events but only for the "develop" branch
   push:
-    branches: [ "master" ]
+    branches: ["master"]
     paths:
-      - 'server/**'
+      - "server/**"
       - "README.MD"
-      - "CHANGELOG.MD"
       - "!console/**"
-    tags:
-      - v[0-9]+.*
   pull_request:
-    branches: [ "master" ]
-   
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -45,16 +41,3 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-  create-release:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: taiki-e/create-gh-release-action@v1
-        with:
-          # (Optional) Path to changelog.
-          changelog: CHANGELOG.MD
-          # (Optional) Create a draft release.
-          # [default value: false]
-          draft: true
-          # (Required) GitHub token for creating GitHub Releases.
-          token: ${{ secrets.LI_GUOHAO_TOKEN }}  
